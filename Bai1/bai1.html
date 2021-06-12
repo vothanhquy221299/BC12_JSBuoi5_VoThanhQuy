@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>EX_JS_Buoi5</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>QUẢN LÍ TUYỂN SINH</h1>
+
+        <h5>1. Nhập điểm của 3 môn thi:</h5>
+        <div class="row mb-4">
+            <div class="col-2">
+                <label>Điểm Toán</label>
+                <input type="number" class="form-control" id="ipDiemToan">
+            </div>
+            <div class="col-2">
+                <label>Điểm Văn</label>
+                <input type="number" class="form-control" id="ipDiemVan">
+            </div>
+            <div class="col-2">
+                <label>Điểm Anh Văn</label>
+                <input type="number" class="form-control" id="ipDiemAnh">
+            </div>
+        </div>
+        <h5>2. Chọn khu vực ưu tiên: </h5>
+        <ul style="list-style: none;">
+            <li class="type" id="liKhuVucA">
+                <input type="radio" name="selector1" id="rdKhuVucA">
+                <label for="khuVucA">Khu vực A</label>
+                <div class="check"></div>
+            </li>
+
+            <li class="type" id="liKhuVucB">
+                <input type="radio" name="selector1" id="rdKhuVucB">
+                <label for="khuVucB">Khu vực B</label>
+                <div class="check"></div>
+            </li>
+
+            <li class="type" id="liKhuVucC">
+                <input type="radio" name="selector1" id="rdKhuVucC">
+                <label for="khuVucC">Khu vực C</label>
+                <div class="check"></div>
+            </li>
+
+            <li class="type" id="liKhuVucK">
+                <input type="radio" name="selector1" id="rdKhuVucK">
+                <label for="khuVucK">Không</label>
+                <div class="check"></div>
+            </li>
+        </ul>
+        <h5>3. Chọn đối tượng dự thi: </h5>
+        <ul style="list-style: none;">
+            <li class="type" id="liDoiTuong1">
+                <input type="radio" name="selector2" id="rdDoiTuong1">
+                <label for="dt1">Đối tượng 1</label>
+                <div class="check"></div>
+            </li>
+
+            <li class="type" id="liDoiTuong2">
+                <input type="radio" name="selector2" id="rdDoiTuong2">
+                <label for="dt2">Đối tượng 2</label>
+                <div class="check"></div>
+            </li>
+
+            <li class="type" id="liDoiTuong3">
+                <input type="radio" name="selector2" id="rdDoiTuong3">
+                <label for="dt3">Đối tượng 3</label>
+                <div class="check"></div>
+            </li>
+
+            <li class="type" id="liDoiTuongK">
+                <input type="radio" name="selector2" id="rdDoiTuongK">
+                <label for="doiTuongK">Không thuộc đối tượng ưu tiên</label>
+                <div class="check"></div>
+            </li>
+        </ul>
+        <div class="row">
+            <h5>4. Nhập vào điểm chuẩn của hội đồng:</h5>
+            <div class="col-2">
+                <input type="number" class="form-control" id="ipDiemChuan">
+            </div>
+        </div>
+        <div class="row mt-4 mb-4">
+            <div class="col-2 ">
+                <button type="button" class="btn btn-warning" id="btnKiemTra">Kiểm tra</button>
+            </div>
+            <div class="col-4">
+                <h4 id="ketQua"></h4>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./bai1.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
