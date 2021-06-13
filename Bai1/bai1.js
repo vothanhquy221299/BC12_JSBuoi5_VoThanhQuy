@@ -122,10 +122,13 @@ document.getElementById('btnKiemTra').addEventListener('click', function () {
         }
         return ketQuaDiemChuan;
     }
+    if(!(ipDiemChuan=='')){
     var hienThiThongTin = kiemTraDauHayRot(ipDiemChuan);
     ketQua.style.display = 'block';
     ketQua.style.color = 'red';
     ketQua.innerHTML = 'Bạn đã ' + hienThiThongTin;
-
+    } else {
+        alert('Vui lòng nhập điểm chuẩn!')
+    }
 });
 
